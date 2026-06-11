@@ -6976,6 +6976,7 @@ src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/global-search/
 src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/global-search/constants.ts
 src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/document-search-result-item.element.ts
 src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/constants.ts
+src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/document-search.server.data-source.test.ts
 src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/types.ts
 src/Umbraco.Web.UI.Client/src/packages/documents/documents/search/document.search-provider.ts
 src/Umbraco.Web.UI.Client/src/packages/documents/documents/user-start-node/manifests.ts
@@ -9505,6 +9506,7 @@ src/Umbraco.Web.UI.Client/src/packages/media/media/search/global-search/media-gl
 src/Umbraco.Web.UI.Client/src/packages/media/media/search/global-search/constants.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/search/constants.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/search/media-search-result-item.element.ts
+src/Umbraco.Web.UI.Client/src/packages/media/media/search/media-search.server.data-source.test.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/search/types.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/user-start-node/manifests.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/user-start-node/value-summary/manifests.ts
@@ -9567,6 +9569,11 @@ src/Umbraco.Web.UI.Client/src/packages/media/media/reference/constants.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/reference/info-app/manifests.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/property-dataset-context/media-property-dataset-context.token.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/property-dataset-context/media-property-dataset-context.ts
+src/Umbraco.Web.UI.Client/src/packages/media/media/utils/index.ts
+src/Umbraco.Web.UI.Client/src/packages/media/media/utils/to-friendly-name.function.test.ts
+src/Umbraco.Web.UI.Client/src/packages/media/media/utils/to-friendly-name.function.ts
+src/Umbraco.Web.UI.Client/src/packages/media/media/utils/ensure-media-name-from-file.function.ts
+src/Umbraco.Web.UI.Client/src/packages/media/media/utils/ensure-media-name-from-file.function.test.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/constants.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/audit-log/index.ts
 src/Umbraco.Web.UI.Client/src/packages/media/media/audit-log/manifests.ts
@@ -14666,6 +14673,7 @@ src/Umbraco.Web.UI.Client/src/packages/management-api/server-event/types.ts
 src/Umbraco.Web.UI.Client/src/packages/management-api/inflight-request/cache.ts
 src/Umbraco.Web.UI.Client/src/packages/management-api/vite.config.ts
 src/Umbraco.Web.UI.Client/src/packages/management-api/tree/index.ts
+src/Umbraco.Web.UI.Client/src/packages/management-api/tree/tree-data.request-manager.test.ts
 src/Umbraco.Web.UI.Client/src/packages/management-api/tree/types.ts
 src/Umbraco.Web.UI.Client/src/packages/management-api/tree/tree-data.request-manager.ts
 src/Umbraco.Web.UI.Client/src/packages/management-api/types.ts
@@ -15391,6 +15399,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/ServerEvents/ServerEven
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/ServerEvents/ServerEventRouterTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Mapping/Content/PublishableVariantStateHelperTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Factories/DocumentCollectionPresentationFactoryTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Factories/DocumentNotificationPresentationFactoryTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Factories/DataTypePresentationFactoryTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Factories/ResizeImageUrlFactoryTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Factories/PublicAccessPresentationFactoryTests.cs
@@ -15491,6 +15500,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Web.Website/Cache/PartialViewCacheInvalida
 tests/Umbraco.Tests.UnitTests/Umbraco.Web.Website/ApplicationUrlConfigurationNotificationHandlerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Templates/DockerFileTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/PublishedContentTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/DomainCacheServiceTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/DocumentCacheSyncFastPathTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/ElementBreadthFirstKeyProviderTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/ElementCacheSyncFastPathTests.cs
@@ -15923,6 +15933,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Core/HashGeneratorTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/HashCodeCombinerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/HealthChecks/HttpsCheckTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/HealthChecks/ImagingHMACSecretKeyCheckTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Core/HealthChecks/UmbracoApplicationUrlCheckTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Media/EmbedProviders/XEmbedProviderTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Media/EmbedProviders/IssuuEmbedProviderTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Media/EmbedProviders/DailyMotionEmbedProviderTests.cs
@@ -16421,6 +16432,7 @@ tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Runtime/FileSystemMainDom
 tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Examine/DeliveryApiContentIndexHelperTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Security/MemberUserStoreConcurrencyTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Security/BackOfficeUserStoreTests.cs
+tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/BackgroundJobs/TouchServerJobTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Scoping/ScopedRepositoryTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Scoping/ScopedNuCacheTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Infrastructure/Scoping/ScopeFileSystemsTests.cs
@@ -16595,6 +16607,7 @@ tests/Umbraco.Tests.Integration/Umbraco.Core/IO/FileSystemsTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Core/IO/ShadowFileSystemTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Core/Packaging/CreatedPackagesRepositoryTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Core/Telemetry/TelemetryServiceTests.cs
+tests/Umbraco.Tests.Integration/Umbraco.Core/Cache/RuntimeCacheTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Core/Cache/PublishedContentTypeCacheTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Core/Cache/ContentCacheRefresherStaleCacheInstructionTests.cs
 tests/Umbraco.Tests.Integration/Umbraco.Core/Cache/DistributedCacheRefresherTests.cs
